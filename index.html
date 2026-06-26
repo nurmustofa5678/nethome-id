@@ -9,3 +9,59 @@
     <p>Website ini dibuat langsung di GitHub.</p>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Nethome</title>
+    <style>
+        /* Mengatur tampilan dasar halaman */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Kotak dengan ukuran sepertiga lebar layar (33.33%) */
+        .kotak-link {
+            width: 33.33%;
+            height: 400px; /* Anda bisa ubah tinggi kotak ini sesuai kebutuhan */
+            border: 2px solid #333;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background-color: #fff;
+            
+            /* Kunci utama agar isi tidak melebihi batas kotak */
+            overflow: hidden; 
+            box-sizing: border-box; 
+        }
+
+        /* Mengatur agar isi link eksternal memenuhi kotak dengan pas */
+        .kotak-link iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Pengaturan khusus agar responsif saat dibuka di HP (lebar penuh) */
+        @media (max-width: 768px) {
+            .kotak-link {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Tampilan Link Eksternal</h2>
+    
+    <!-- Area Kotak Sepertiga Layar -->
+    <div class="kotak-link">
+        <!-- Ganti URL src di bawah ini dengan link eksternal yang Anda inginkan -->
+        <iframe src="http://9.154.229.212:8080/isp/login.php"></iframe>
+    </div>
+
+</body>
+</html>
+
