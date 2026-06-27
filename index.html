@@ -3,82 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Nethome</title>
+    <title>Cek Tagihan Internet Nethome</title>
     <style>
-        /* Mengatur tampilan dasar halaman */
+        /* Mengatur tampilan dasar agar terlihat profesional di HP & Komputer */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: #f4f7f6;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        h2 {
-            color: #333;
-            margin-bottom: 15px;
-        }
-
-        /* Kotak Link berukuran sepertiga layar yang bisa diklik */
-        .kotak-link-baru {
-            width: 33.33%;
-            min-height: 200px;
-            border: 2px solid #333;
-            border-radius: 12px;
-            background-color: #ffffff;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            text-decoration: none; /* Menghilangkan garis bawah link */
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            margin: 0;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
             box-sizing: border-box;
-            transition: transform 0.2s, box-shadow 0.2s;
-            cursor: pointer;
+        }
+
+        /* Pembungkus utama agar konten tidak terlalu lebar di layar komputer */
+        .container {
+            width: 100%;
+            max-width: 500px;
             text-align: center;
         }
 
-        /* Efek interaktif saat kotak disentuh kursor */
-        .kotak-link-baru:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-            background-color: #f9f9f9;
-        }
-
-        /* Gaya teks di dalam kotak */
-        .kotak-link-baru h3 {
-            margin: 0 0 10px 0;
-            color: #007bff;
-        }
-
-        .kotak-link-baru p {
-            margin: 0;
-            font-size: 14px;
-            color: #666;
-        }
-
-        /* Pengaturan agar responsif dan lebar penuh saat dibuka di HP */
-        @media (max-width: 768px) {
-            .kotak-link-baru {
-                width: 100%;
-            }
+        /* Efek interaktif saat tombol disentuh/diklik di Android */
+        .tombol-inet:active {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(0.98);
         }
     </style>
 </head>
 <body>
 
-   <!-- KOTAK LINK YANG AMAN DARI BLOKIR BROWSER -->
-<a href=http://9.154.229.212:8080/isp/login.php"" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #333;">
-    <div style="width: 33.33%; min-height: 200px; border: 3px solid #333; border-radius: 12px; background-color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,0.15); padding: 20px; box-sizing: border-box; text-align: center; cursor: pointer; transition: 0.2s;">
-        <h3 style="color: #007bff; margin-top: 20px;">Masuk ke Aplikasi ISP Nethome</h3>
-        <p style="color: #666; font-size: 14px; margin-top: 10px;">Klik kotak ini untuk membuka halaman Login Pelanggan dengan aman di tab baru.</p>
+<div class="container">
+
+    <!-- BAGIAN UTAMA (KODE ANDA YANG SUDAH DIRAPIKAN) -->
+    <div style="background: rgb(0, 123, 255); border-radius: 12px; color: white; margin: 10px 0px; padding: 25px; box-shadow: 0 4px 15px rgba(0,123,255,0.2);">
+        <h3 style="color: white; margin: 0px 0px 15px; font-size: 20px;">Cek Tagihan Dan Pembayaran Internet Anda</h3>
+        
+        <a href="http://9.154.229.212:8080/isp/login.php" style="color: white; text-decoration: none;" target="_blank">
+            <div class="tombol-inet" style="border-radius: 8px; border: 2px solid white; display: inline-block; font-size: 18px; font-weight: bold; padding: 12px 20px; transition: all 0.2s ease;">
+                NOMOR INET ANDA 
+                <img src="https://cdn-icons-png.flaticon.com/512/751/751463.png" style="height: 20px; margin-left: 8px; vertical-align: middle; width: 20px; filter: brightness(0) invert(1);" />
+            </div>
+        </a>
+    </div> 
+
+    <!-- KETERANGAN DI BAWAH KOTAK -->
+    <div style="margin-top: 15px; color: #555; font-size: 14px; line-height: 1.5;">
+        Masukkan Nomor Inet Anda Untuk Cek Status Tagihan Anda
     </div>
-</a>
- 
+
+</div>
 
 </body>
 </html>
-
